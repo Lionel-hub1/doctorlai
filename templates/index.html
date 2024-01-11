@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DoctorLai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="rounded-lg bg-[#A08CF2] text-white flex justify-between items-center px-[5vw] py-[2vw] mx-[5vw] my-[2vw]"
+      >
+        <div class="brand">
+          <span class="font-bold text-3xl text-white"> Doctorlai </span>
+        </div>
+        <div class="flex gap-10 justify-self-end text-xl">
+          <a href="#" class="px-2.5 py-[5px]">Home</a>
+          <a href="#" class="px-2.5 py-[5px]">Doctors</a>
+          <a href="#" class="px-2.5 py-[5px]">Appointment</a>
+          <a href="#" class="px-2.5 py-[5px]">Therapy</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="flex justify-between items-center px-[5vw] py-[2vw] mx-[5vw] my-[2vw]"
+      >
+        <div class="flex flex-col gap-5">
+          <h1 class="text-5xl font-bold">
+            <span class="text-[#A08CF2]">Health</span> Now Near your hand
+          </h1>
+          <p class="text-xl">
+            We are dedicated to excellence in patient care, patient safety and
+            the quality of the reliably healthcare experience, Our clinic
+            provides high quality service.
+          </p>
+          <div class="flex gap-5">
+            <button
+              class="rounded-lg px-5 py-2.5 bg-[#A08CF2] text-white text-xl"
+            >
+              Learn more
+            </button>
+            <button
+              class="border px-2.5 py-[5px] rounded-[5px] border-solid border-[#A08CF2] text-black text-xl"
+            >
+              Get Appointment
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <img src="{% static 'doctor.png' %}" alt="doctor" class="w-[80vw]" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
